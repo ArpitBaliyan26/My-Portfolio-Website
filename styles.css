@@ -347,3 +347,205 @@ textarea.form_input {
     color: var(--primary);
     border-color: var(--primary);
 }
+
+/* ... Your existing CSS styles remain above this line ... */
+
+/* --- Media Queries for Responsiveness --- */
+
+/* Tablet-sized screens and up (e.g., max-width: 1024px to target tablets and smaller laptops) */
+@media (max-width: 1024px) {
+    /* NAVIGATION BAR */
+    nav {
+        height: 100px;
+    }
+
+    nav img {
+        width: 80px;
+        height: 80px;
+    }
+
+    nav ul li {
+        font-size: 20px;
+        margin: 0 10px;
+    }
+    
+    .right button {
+        width: 150px;
+        height: 80px;
+    }
+
+    .right button a {
+        font-size: 1.4em;
+    }
+
+    .right button a .arrow-icon {
+        font-size: 1.5em;
+    }
+
+    /* FIRST SECTION (Hero) */
+    .firstSection {
+        flex-direction: column-reverse; /* Stack sections on smaller screens */
+        text-align: center;
+        margin: 40px 20px;
+    }
+
+    .leftSection {
+        width: 90%;
+        font-size: 2.5rem; /* Smaller font size */
+        margin-top: 30px;
+    }
+
+    .text-purple {
+        font-size: 3rem;
+    }
+
+    .bio1 {
+        font-size: 2.5rem;
+    }
+
+    .leftSection .buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px;
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    .rightSection img {
+        width: 50%; /* Make image smaller */
+    }
+
+    /* ABOUT SECTION */
+    .aboutSection {
+        grid-template-columns: 1fr; /* Single column layout */
+        margin: 20px;
+        gap: 20px;
+    }
+
+    .about_top {
+        grid-column: 1/2;
+        font-size: 2.5rem;
+    }
+
+    .about_image {
+        grid-column: 1/2;
+        padding: 0;
+    }
+    
+    .about_image img {
+        height: auto;
+        max-width: 80%;
+    }
+
+    .about_right {
+        grid-column: 1/2;
+        padding: 0 10px;
+        text-align: left;
+    }
+
+    .about_right > div {
+        font-size: 2.5rem;
+    }
+
+    .about_right .bio2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 80px;
+    }
+
+    nav {
+        height: 80px;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+    nav img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .middle {
+        display: none;
+    }
+
+    .right button {
+        width: 100px;
+        height: 60px;
+        border-radius: 10px;
+    }
+
+    .right button a {
+        font-size: 1em;
+        line-height: 1;
+        width: 80%;
+        height: 70%;
+        border-radius: 8px;
+    }
+
+    .right button a .arrow-icon {
+        font-size: 1.2em;
+        margin-left: 5px;
+    }
+    
+    .firstSection {
+        margin: 30px 10px;
+    }
+    
+    .leftSection {
+        font-size: 1.8rem;
+        width: 100%;
+    }
+
+    .text-purple {
+        font-size: 2.2rem;
+    }
+
+    .bio1 {
+        font-size: 1.8rem;
+    }
+
+    .leftSection .buttons {
+        width: 90%;
+    }
+
+    .leftSection .btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .rightSection img {
+        width: 70%; 
+    }
+
+    main hr {
+        margin: 10px 20px;
+    }
+
+    .about_top {
+        font-size: 2rem;
+    }
+
+    .about_image img {
+        max-width: 100%;
+    }
+
+    .about_right > div {
+        font-size: 2rem;
+    }
+
+    .about_right .about_content p {
+        font-size: 0.9rem;
+    }
+
+    #contact-form {
+        margin: 20px 10px;
+        padding: 1.5rem;
+    }
+    
+    #contact-form h2 {
+        font-size: 2em;
+    }
+}
