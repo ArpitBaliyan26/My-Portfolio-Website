@@ -348,13 +348,7 @@ textarea.form_input {
     border-color: var(--primary);
 }
 
-/* ... Your existing CSS styles remain above this line ... */
-
-/* --- Media Queries for Responsiveness --- */
-
-/* Tablet-sized screens and up (e.g., max-width: 1024px to target tablets and smaller laptops) */
 @media (max-width: 1024px) {
-    /* NAVIGATION BAR */
     nav {
         height: 100px;
     }
@@ -382,16 +376,15 @@ textarea.form_input {
         font-size: 1.5em;
     }
 
-    /* FIRST SECTION (Hero) */
     .firstSection {
-        flex-direction: column-reverse; /* Stack sections on smaller screens */
+        flex-direction: column-reverse;
         text-align: center;
         margin: 40px 20px;
     }
 
     .leftSection {
         width: 90%;
-        font-size: 2.5rem; /* Smaller font size */
+        font-size: 2.5rem;
         margin-top: 30px;
     }
 
@@ -404,19 +397,18 @@ textarea.form_input {
     }
 
     .leftSection .buttons {
-        flex-direction: column; /* Stack buttons vertically */
+        flex-direction: column;
         gap: 10px;
         margin: 20px auto;
         width: 80%;
     }
 
     .rightSection img {
-        width: 50%; /* Make image smaller */
+        width: 50%;
     }
 
-    /* ABOUT SECTION */
     .aboutSection {
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr;
         margin: 20px;
         gap: 20px;
     }
