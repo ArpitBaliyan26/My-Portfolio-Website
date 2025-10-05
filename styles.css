@@ -19,7 +19,6 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    /* z-index: 1000; */
 }
 
 nav img {
@@ -268,6 +267,11 @@ main hr {
     line-height: 1.6;
     text-align: justify;
     margin-top: 20px;
+    transition: transform 1s ease;
+}
+
+.about_right .about_content p:hover {
+    transform: translate(15px, 0);
 }
 
 #contact-form {
@@ -309,7 +313,7 @@ label>span {
 }
 
 .form_input {
-    width: 100%;
+    width: auto;
     padding: 0.8em 1em;
     border: 1px solid var(--primary);
     background-color: var(--bgDark);
