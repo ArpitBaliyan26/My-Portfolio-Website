@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arpit Baliyan</title>
+    <link rel="icon" type="image/png" href="assests/icon.png">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <img src="assets/icon.png" alt="logo">
+            </div>
+            <div class="middle">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="./projects.html">Skills</a></li>
+                    <li><a href="./projects.html">Achievments</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./blogs.html">Blogs</a></li>
+                    <li><a href="#contact-form">Contact</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <button>
+                    <a href="./friends.html">PLAY<br>ZONE <span class="arrow-icon">&#x2197;</span></a>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hello World!</div>
+                <div>I'm <span class="text-purple">Arpit Baliyan</span> </div>
+                <div class="bio1"><span id="element"></span></div>
+                <div class="buttons">
+                    <div class="btn"><a href="assets/resume.pdf">Download Resume</a></div>
+                    <div class="btn"><a href="https://www.linkedin.com/in/arpitbaliyan/">LinkedIn Profile</a></div>
+                    <div class="btn"><a href="https://github.com/ArpitBaliyan26">Visit GitHub</a></div>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="./assets/image.jpg" alt="profile photo">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="aboutSection" id="#about">
+            <div class="about_top"><span>Who am I?</span></div>
+            <div class="about_image">
+                <img src="assets/image2.jpg" alt="about image">
+            </div>
+            <div class="about_right">
+                <div>About Me</div>
+                <div class="bio2"><span id="bio"></span></div>
+                <div class="about_content">
+                    <p>Hi, I'm Arpit Baliyan, a Computer Science undergraduate at <span class="college">Scaler School of
+                            Technology</span> (Batch
+                        2025–29), passionate about agentic AI, startups, and building impactful tech solutions.
+                    </p>
+                    <p>
+                        My journey to CS has been unconventional—coming from a PCMB background, I bring a unique
+                        multidisciplinary perspective to problem-solving. From securing Global Rank 77 in International
+                        Olympiads to leading student councils of 1000+ students, from winning coding competitions to
+                        generating ₹8,625 revenue in the ₹1000 Hustle Challenge (4th out of 29 teams)—I thrive at the
+                        intersection of technology, leadership, and entrepreneurship.
+                    </p>
+                    <p>
+                        Currently, I'm part of the Startup Track at Scaler Innovation Lab, exploring AI-driven projects
+                        and
+                        startup ecosystems. What sets me apart isn't just technical skills—it's the ability to think
+                        like a
+                        scientist, build like an engineer, lead like a manager, and create like an artist. Whether it's
+                        debugging code, pitching products on Bangalore's streets, or leading social awareness campaigns,
+                        I
+                        bring a 360-degree perspective to every challenge.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="contact-form">
+            <h2>Get in Touch </h2>
+            <form class="contact_heading" id="contact" name="contact" accept-charset="utf-8">
+                <label><span>Name</span><input class="form_input" name="name" type="text" placeholder="Name" /></label>
+                <label><span>Email</span><input class="form_input" name="email" type="email"
+                        placeholder="Email" /></label>
+                <label><span>Message</span><textarea class="form_input" name="message"
+                        placeholder="Message"></textarea></label>
+                <input class="form_input submit_button" name="submit" type="submit" value="Send" />
+            </form>
+        </section>
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['1st-year CS Student,', 'Exploring Tech World!'],
+            loop: true,
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+        var typed = new Typed('#bio', {
+            strings: ['Explorer &amp; Curious,', 'like Charles Darwin!'],
+            loop: true,
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
