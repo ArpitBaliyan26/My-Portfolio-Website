@@ -40,7 +40,7 @@ portfolio/
       <li><strong>Clone</strong> this repository:</li>
 
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/arpitbaliyan26/my-portfolio-website.git
 ```
 <li><strong>Open</strong> <code>index.html</code> in any browser.</li>
 <li><strong>Customize</strong> <code>styles.css</code> and content as needed.</li>
